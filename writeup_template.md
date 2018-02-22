@@ -129,12 +129,13 @@ The architecture was adjusted with convolution layer added to after second convo
 * Which parameters were tuned? How were they adjusted and why?
 The Epochs size,Batch Size,Learning and Keep Probs were tuned.The batch size was 127 and epoch given as 30 with learning rate as 0.0005 and keep prob for Train set was 0.5 and valid was 1
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
+Droput layer was added because the overfitting with the dataset because the our dataset has biased towards certain traffic signs.Building upon lenet architecture it was observed that it could reach better accuracy by adding more layers as with LENET architecture a certain accuracy came after which it git maxed out.
 
 If a well known architecture was chosen:
-* What architecture was chosen?
-* Why did you believe it would be relevant to the traffic sign application?
+* What architecture was chosen?LENET
+* Why did you believe it would be relevant to the traffic sign application?Because MNIST data and Traffic classifier data are have similar classifcation problems
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
- 
+ Becuase of higher accuracy on Test data which shown to network for first time shows the increase in stability of data model of higher accuracy
 
 ### Test a Model on New Images
 
