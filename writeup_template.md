@@ -124,17 +124,28 @@ The first architecture chosen was LENET as data used to train MINIST dataset is 
 * What were some problems with the initial architecture?
 The problems with the architecture was the dropout layer and the architecture had lesser covolution layer for to maintain a higher accuracy for the architecture
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
-The architecture was adjusted with convolution layer added to after second convolution layer as hidden layer with 5x5x16x420 and extra relu function was added to it after the first fully connected layer the dropout layer was added to decrease the over fitting of the data
+
+The architecture was adjusted with convolution layer as added after second convolution layer as hidden layer with 5x5x16x420 and relu function was added to it before the first fully connected layer.The dropout layer was added to it to decrease the over fitting of the data set between train set and valid set.
+
 * Which parameters were tuned? How were they adjusted and why?
-The Epochs size,Batch Size,Learning and Keep Probs were tuned.The batch size was 128 and epoch given as 30 with learning rate as 0.0005 and keep prob for Train set was 0.5 and valid was 1
+
+The Epochs size,Batch Size,Learning rate and Keep Probs were tuned.
+The batch size was 128 and epoch given as 30 with learning rate as 0.0005 and keep prob for Train set was 0.5, valid and test was 1
+
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
-Droput layer was added because the overfitting with the dataset because the our dataset has biased towards certain traffic signs.Building upon lenet architecture it was observed that it could reach better accuracy by adding more layers as with LENET architecture a certain accuracy came after which it git maxed out.
+
+Building upon lenet architecture it was observed that it could reach better accuracy by adding more layers as with LENET architecture a certain accuracy came after which it git maxed out.Droput layer was added because of overfitting between datasets because our dataset has biased towards certain traffic signs.
 
 If a well known architecture was chosen:
-* What architecture was chosen?LENET
-* Why did you believe it would be relevant to the traffic sign application?Because MNIST data and Traffic classifier data are have similar classifcation problems
+* What architecture was chosen? 
+
+LENET
+* Why did you believe it would be relevant to the traffic sign application?
+
+Because MNIST data and Traffic classifier data are have similar classifcation problems
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
- Becuase of higher accuracy on Test data which shown to network for first time shows the increase in stability of data model of higher accuracy
+
+Becuase of higher accuracy on Test data which shown to network for first time which shows increase in stability of data model of better accuracy
 
 ### Test a Model on New Images
 
@@ -146,8 +157,11 @@ Here are five German traffic signs that I found on the web:
 ![alt text][image7] ![alt text][image8]
 
 The first image might be difficult to classify because 
+
 1.Images were not centered
+
 2.There were not properly zoomed in
+
 3.The sign used had different background behind them
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
