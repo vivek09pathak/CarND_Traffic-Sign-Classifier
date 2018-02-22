@@ -94,14 +94,13 @@ My final model consisted of the following layers:
 | Convolution 5x5     	| 1x1 stride, same padding, outputs 28x28x6 	|
 | RELU					|												|
 | Max pooling	      	| 2x2 stride,  28x28x6 in, 14x14x6 out 				|
-| Convolution 5x5	   | 2x2 stride,  14x14x6 in, 10x10x16 out						|
+| Convolution 5x5	   | 1x1 stride,  14x14x6 in, 10x10x16 out						|
 | RELU					|												|
 | Max pooling	      	| 2x2 stride,  10x10x16 in, 5x5x16 out 				|
 | Convolution 5x5	   | 1x1 stride,   5x5x16 in, 1x1x420 out						|
 | RELU					|												|
-|	Fully connected					|				1x1x420 in, 420	out							|
 |	Flatten					|												|
-|	Fully connected					|				420 in, 120	out							|
+|	Fully connected					|				1x1x420 in, 120	out							|
 | RELU					|												|
 | DROPOUT					|							prob=0.5					|
 |	Fully connected					|				120 in, 84	out							|
