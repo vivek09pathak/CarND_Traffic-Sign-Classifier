@@ -109,14 +109,14 @@ My final model consisted of the following layers:
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-To train the model, I used an Adam optimizer to train my model to find minima of the cross entropy batch size i have given as 127 with number of epochs as 30 and other hyperparameter as mean=0 and standard deviation=0.1 with learning rate as 0.0005
+To train the model, I used an Adam optimizer to train my model to find minima of the cross entropy batch size i have given as 128 with number of epochs as 30 and other hyperparameter as mean=0 and standard deviation=0.1 with learning rate as 0.0005
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* training set accuracy of 0.999
-* validation set accuracy of 0.935
-* test set accuracy of 0.931
+* training set accuracy of 1.000
+* validation set accuracy of 0.945
+* test set accuracy of 0.930
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
@@ -126,7 +126,7 @@ The problems with the architecture was the dropout layer and the architecture ha
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
 The architecture was adjusted with convolution layer added to after second convolution layer as hidden layer with 5x5x16x420 and extra relu function was added to it after the first fully connected layer the dropout layer was added to decrease the over fitting of the data
 * Which parameters were tuned? How were they adjusted and why?
-The Epochs size,Batch Size,Learning and Keep Probs were tuned.The batch size was 127 and epoch given as 30 with learning rate as 0.0005 and keep prob for Train set was 0.5 and valid was 1
+The Epochs size,Batch Size,Learning and Keep Probs were tuned.The batch size was 128 and epoch given as 30 with learning rate as 0.0005 and keep prob for Train set was 0.5 and valid was 1
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
 Droput layer was added because the overfitting with the dataset because the our dataset has biased towards certain traffic signs.Building upon lenet architecture it was observed that it could reach better accuracy by adding more layers as with LENET architecture a certain accuracy came after which it git maxed out.
 
