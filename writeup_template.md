@@ -44,7 +44,7 @@ I used the pandas library to calculate summary statistics of the traffic
 signs data set:
 
 * The size of training set is 34799
-* The size of the validation set is 12630
+* The size of the validation set is 4410
 * The size of test set is 12630
 * The shape of a traffic sign image is (32, 32, 3)
 * The number of unique classes/labels in the data set is 34799
@@ -66,14 +66,6 @@ Here is an example of a traffic sign image before and after grayscaling.
 ![alt text][image2]
 
 As a last step, I normalized the image data because to ensure that all the features are in same scale so that no particular features influence the neural network to do that I have taken data to zero mean and unit covariances. 
-
-I decided to generate additional data because ... 
-
-To add more data to the the data set, I used the following techniques because ... 
-
-Here is an example of an original image and an augmented image:
-
-![alt text][image3]
 
 The difference between the original data set and the augmented data set is the following ... 
 
