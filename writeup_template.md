@@ -71,7 +71,7 @@ random images ![alt text][image2]
 
 As a first step, I decided to convert the images to grayscale because my Images were in 3-channel which I converted the images into grayscale by use of numpy.mean() function for all data sets i.e. train,test and validation and saved them again in same parameters.
 
-Here is an example of a traffic sign image before and after grayscaling.
+Here is an example of a traffic sign image before and after grayscaling and normalization.
 
 Before 
 ![alt text][image2]
