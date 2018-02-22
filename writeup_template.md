@@ -23,8 +23,8 @@ The goals / steps of this project are the following:
 [image4]: ./traffic-sign-classifier/images/image_no_passing.png
 [image5]: ./traffic-sign-classifier/images/image_speed_50.png
 [image6]: ./traffic-sign-classifier/images/image_speed_80.png
-[image7]: ./traffic-sign-classifier/images/image_turn_left ahead.png
-[image8]: ./traffic-sign-classifier/images/image_turn_right ahead.png
+[image7]: ./traffic-sign-classifier/images/image_turn_left_ahead.png
+[image8]: ./traffic-sign-classifier/images/image_turn_right_ahead.png
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
