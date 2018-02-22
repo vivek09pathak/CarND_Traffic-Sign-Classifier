@@ -47,7 +47,7 @@ signs data set:
 * The size of the validation set is 4410
 * The size of test set is 12630
 * The shape of a traffic sign image is (32, 32, 3)
-* The number of unique classes/labels in the data set is 34799
+* The number of unique classes/labels in the data set is 43
 
 #### 2. Include an exploratory visualization of the dataset.
 
@@ -76,11 +76,11 @@ My final model consisted of the following layers:
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x3 RGB image   							| 
-| Convolution 4x4     	| 1x1 stride, same padding, outputs 32x32x64 	|
+| Input         		| 32x32x1 gray scale image   							| 
+| Convolution 5x5     	| 1x1 stride, same padding, outputs 28x28x6 	|
 | RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
+| Max pooling	      	| 2x2 stride,  28x28x6 in, 14x14x6 out 				|
+| Convolution 5x5	   | 2x2 stride,  14x14x6 in, 10x10x16 out						|
 | Fully connected		| etc.        									|
 | Softmax				| etc.        									|
 |						|												|
