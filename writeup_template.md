@@ -2,7 +2,6 @@
 
 ## Writeup
 
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
 
 ---
 
@@ -37,7 +36,7 @@ The goals / steps of this project are the following:
 
 #### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
-You're reading it! and here is a link to my [project code](https://github.com/vivek09pathak/traffic-sign-classifier)
+You're reading it! and here is a link to my [project code](https://github.com/vivek09pathak/traffic-sign-classifier/blob/master/Traffic_Sign_Classifier%20.ipynb)
 
 ### Data Set Summary & Exploration
 
@@ -109,7 +108,7 @@ My final model consisted of the following layers:
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-To train the model, I used an Adam optimizer to train my model to find minima of the cross entropy batch size i have given as 128 with number of epochs as 30 and other hyperparameter as mean=0 and standard deviation=0.1 with learning rate as 0.0005
+To train the model, I used an Adam optimizer to train my model as it uses stochastic gradient to find minima whcih has lower order moments.I have given batch size as 128 with number of epochs as 30 and other hyperparameter as mean=0 and standard deviation=0.1 with learning rate as 0.0005
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
@@ -120,9 +119,9 @@ My final model results were:
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
-The first architecture chosen was LENET as data used to train MINIST dataset is for german traffic sign and dataset for the project provided was same to MINIST dataset.
+The first architecture chosen was LENET as data used to train MINIST dataset is from german traffic sign and dataset for the project provided was same to MINIST dataset since both have same classes in them so it is good to adapt the model.
 * What were some problems with the initial architecture?
-The problems with the architecture was the dropout layer and the architecture had lesser covolution layer for to maintain a higher accuracy for the architecture
+The problems with the architecture was no dropout layer and the architecture had lesser covolution layer for it to maintain a higher accuracy for the dataset.
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
 
 The architecture was adjusted with convolution layer as added after second convolution layer as hidden layer with 5x5x16x420 and relu function was added to it before the first fully connected layer.The dropout layer was added to it to decrease the over fitting of the data set between train set and valid set.
@@ -142,7 +141,7 @@ If a well known architecture was chosen:
 LENET
 * Why did you believe it would be relevant to the traffic sign application?
 
-Because MNIST data and Traffic classifier data are have similar classifcation problems
+Because MNIST data and Traffic classifier data are have similar classifcation problems.
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
 
 Becuase of higher accuracy on Test data which shown to network for first time which shows increase in stability of data model of better accuracy
